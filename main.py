@@ -1,12 +1,9 @@
-import pygame, intro, dimensions as dim
+import pygame, visual as vis, buttons as but
 
 pygame.init()
 clock = pygame.time.Clock()
 pygame.display.set_caption('Fishing For Bass')
-screen = pygame.display.set_mode((dim.width, dim.height))
 FPS = 60
-
-turn = 0
 
 while True:
     
@@ -14,9 +11,11 @@ while True:
     (pressed_l, presed_m, pressed_r) = pygame.mouse.get_pressed()
     (mouse_x, mouse_y) = pygame.mouse.get_pos()     
     
-    intro.shop_map()
+    vis.shop_map()
     
-    intro.start_game(mouse_x, mouse_y, pressed_l)
+    vis.start_game(mouse_x, mouse_y, pressed_l)
+    
+    vis.turn_stats(mouse_x, mouse_y, pressed_l, but.turn)
     
     pygame.display.update()
     clock.tick(FPS)
