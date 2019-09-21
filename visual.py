@@ -161,6 +161,13 @@ def shop_map():
     pic('warrior.png', 50, 50, dim.shop_column_1, dim.shop_row_1)
     pic('horse.png', 50, 50, dim.shop_column_2, dim.shop_row_1)
     pic('big_boat.png', 50, 50, dim.shop_column_2, dim.shop_row_3)
+    pic('plane.png', 50, 50, dim.shop_column_1, dim.shop_row_4)
+    pic('nuke.png', 50, 50, dim.shop_column_2, dim.shop_row_5)
+    pic('barrier.png', 50, 50, dim.shop_column_1, dim.shop_row_5)
+    pic('tank.png', 50, 50, dim.shop_column_2, dim.shop_row_4)
+    pic('int boat.png', 50, 50, dim.shop_column_1, dim.shop_row_3)
+    pic('small_boat.png', 50, 50, dim.shop_column_2, dim.shop_row_2)
+    pic('bus.png', 50, 50, dim.shop_column_1, dim.shop_row_2)
 
 
 def start_screen():
