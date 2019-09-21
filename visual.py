@@ -38,7 +38,7 @@ def pic(location, w, h, x, y):
 def shop_map():
     #Map
     screen.fill(col.BROWN)
-    pic('risk.jpg', dim.width - dim.shop_width - 20, dim.height - 20, 10, 10)
+    pic('risk.jpg', dim.width - dim.shop_width - 20, dim.height - 20, 10, 10)    
     rect(col.BLACK, dim.width - dim.shop_width, 0, dim.shop_width, dim.height)
     rect(col.DARK_BROWN, dim.width - 240, 10, 230, dim.height - 20)
     
@@ -90,16 +90,16 @@ def shop_map():
     rect(col.BLACK, dim.shop_column_2 - 2, dim.shop_row_3 - 2, 54, 54)
     rect(col.BLACK, dim.shop_column_2 - 2, dim.shop_row_2 - 2, 54, 54)
     rect(col.BLACK, dim.shop_column_2 - 2, dim.shop_row_1 - 2, 54, 54)
-    rect(col.BROWN, dim.shop_column_1, dim.shop_row_5, dim.shop_box_w, dim.shop_box_h)
-    rect(col.BROWN, dim.shop_column_1, dim.shop_row_4, dim.shop_box_w, dim.shop_box_h)
-    rect(col.BROWN, dim.shop_column_1, dim.shop_row_3, dim.shop_box_w, dim.shop_box_h)
-    rect(col.BROWN, dim.shop_column_1, dim.shop_row_2, dim.shop_box_w, dim.shop_box_h)
-    rect(col.BROWN, dim.shop_column_1, dim.shop_row_1, dim.shop_box_w, dim.shop_box_h)
-    rect(col.BROWN, dim.shop_column_2, dim.shop_row_5, dim.shop_box_w, dim.shop_box_h)
-    rect(col.BROWN, dim.shop_column_2, dim.shop_row_4, dim.shop_box_w, dim.shop_box_h)
-    rect(col.BROWN, dim.shop_column_2, dim.shop_row_3, dim.shop_box_w, dim.shop_box_h)
-    rect(col.BROWN, dim.shop_column_2, dim.shop_row_2, dim.shop_box_w, dim.shop_box_h)
-    rect(col.BROWN, dim.shop_column_2, dim.shop_row_1, dim.shop_box_w, dim.shop_box_h)
+    rect(col.WHITE, dim.shop_column_1, dim.shop_row_5, dim.shop_box_w, dim.shop_box_h)
+    rect(col.WHITE, dim.shop_column_1, dim.shop_row_4, dim.shop_box_w, dim.shop_box_h)
+    rect(col.WHITE, dim.shop_column_1, dim.shop_row_3, dim.shop_box_w, dim.shop_box_h)
+    rect(col.WHITE, dim.shop_column_1, dim.shop_row_2, dim.shop_box_w, dim.shop_box_h)
+    rect(col.WHITE, dim.shop_column_1, dim.shop_row_1, dim.shop_box_w, dim.shop_box_h)
+    rect(col.WHITE, dim.shop_column_2, dim.shop_row_5, dim.shop_box_w, dim.shop_box_h)
+    rect(col.WHITE, dim.shop_column_2, dim.shop_row_4, dim.shop_box_w, dim.shop_box_h)
+    rect(col.WHITE, dim.shop_column_2, dim.shop_row_3, dim.shop_box_w, dim.shop_box_h)
+    rect(col.WHITE, dim.shop_column_2, dim.shop_row_2, dim.shop_box_w, dim.shop_box_h)
+    rect(col.WHITE, dim.shop_column_2, dim.shop_row_1, dim.shop_box_w, dim.shop_box_h)
     
     #Name Countries + Stats
     text_1('Madagascar', col.BLACK, None, 803, 631, 15, 60)
@@ -157,6 +157,10 @@ def shop_map():
     text_1('sia', col.BLACK, None, 1049, 548, 16, -15)
     text_1('Central', col.BLACK, None, 194, 314, 15, -72)
     text_1('America', col.BLACK, None, 220, 368, 15, -18)
+
+    pic('warrior.png', 50, 50, dim.shop_column_1, dim.shop_row_1)
+    pic('horse.png', 50, 50, dim.shop_column_2, dim.shop_row_1)
+    pic('big_boat.png', 50, 50, dim.shop_column_2, dim.shop_row_3)
 
 
 def start_screen():
