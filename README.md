@@ -17,6 +17,7 @@ A Claimed territory will produce the specified resources for the player. A terri
 longer own units there.
 
 OWNERSHIP : Ownership is defined as being the only player with a unit on any territory.
+UNOWNED : Any territory with no units.
 
 TURN :
 
@@ -28,9 +29,16 @@ TURN :
     owned by you.
     
     ACTION PHASE : Here, you may move or Attack Units. Once per round, you may choose to expend 1 of a 
-    Units Speed to Attack. If the Attack leaves the Defending territory without OWNERSHIP, the Attacking 
-    units may move into the territory without expending Speed. Speed resets on your turn and if not used 
-    to Attack, unless otherwise specified, can be used to move into Allied or UNOWNED territories.
+    Units Speed to Attack. If the Attack leaves the Defending territory without UNOWNED, the Attacking 
+    unit(s) may move into the territory without expending Speed. Speed resets on your turn and if not used 
+    to Attack, unless otherwise specified, can be used to move into adjacent allied or UNOWNED territories.
+
+
+Attacking : When a Unit Attacks a territory with an enemy unit, both units subtract the opposing power level
+from their current total. If this power level reaches 0 or less, the unit dies. Water and Arial Units cannot be
+Attacked. But if the territory an Arial unit is based in is no longer under OWNERSHIP by the player that
+purchased it, it is destroyed.
+
 
 UNITS:
 
@@ -79,7 +87,7 @@ UNITS:
 
     BIG BOAT: Water Transport
         COST: 0/150/150/200
-        Attack : Any and all Units being transported may Attack from this Transort
+        Attack : Any and all Units being transported may Attack from this Transport
         Speed : 3 (Can Travel to any Coast using 1 Speed)
         Transport : 30 (Can carry tanks)
         Claim Speed : N/A
@@ -98,7 +106,7 @@ UNITS:
         COST: 0/0/250/200
         Speed : 1 Territory
         Power : 5
-        Attack : I attack any chosen territory, when I Attack, I do not die.
+        Attack : I attack any chosen territory, I do not lose Power when I Attack.
         
     NUKES: Arial
         COST:500/500/1000/1500
