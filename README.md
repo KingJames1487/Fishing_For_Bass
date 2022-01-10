@@ -17,7 +17,7 @@ Each Resource has it's own value and is more/less valuable at different points i
     ex. Food is amazing early while oil is next to useles but oil becomes extremely good later
 
 CLAIM: To begin claiming a territory, simply move a character into an uninhabited space.
-    ***Claiming territories takes more than 0 turns unlike Civ or Risk. In Fishing For Bass, it takes *5* consecutive turns of claimed ownership to begin receiving resources***
+    ***Claiming territories takes more than 0 turns unlike Civ or Risk. In Fishing For Bass, it takes *5* consecutive turns of ownership to begin receiving resources/ Ownership is defined as being the only player with a unit on any territory***
 
 UNITS:
 
