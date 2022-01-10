@@ -14,11 +14,10 @@ RESOURCES:  FOOD,  WOOD,  STEEL,  OIL
 
 CLAIM: Claiming territories requires 5 consecutive turns of OWNERSHIP to begin receiving resources. 
 A Claimed territory will produce the specified resources for the player. A territory is UNCLAIMED if you no 
-longer own units there.
+longer have 0 power there.
 
-OWNERSHIP : Ownership is defined as being the only player with a unit on any territory.
-
-UNOWNED : Any territory with no units.
+OWNERSHIP : Ownership is defined as being the only player with a unit on any territory. A territory 
+is UNOWNED is you have 0 power there.
 
 TURN :
 
@@ -35,11 +34,18 @@ TURN :
     to Attack, unless otherwise specified, can be used to move into adjacent allied or UNOWNED territories.
 
 
-Attacking : When a Unit Attacks a territory with an enemy unit, both units subtract the opposing power level
-from their current total. If this power level reaches 0 or less, the unit dies. Water and Arial Units cannot be
-Attacked. But if the territory an Arial unit is based in is no longer under OWNERSHIP by the player that
-purchased it, it is destroyed.
+Attacking : When a Unit Attacks a territory with an enemy unit, the Attacking unit subtracts the defending 
+territories power level from their current total. If this power level reaches 0 or less, the unit dies. The
+defending territory then subtracts the Attacking units power level from its total. 
 
+Water and Arial Units : Water and Arial Units cannot be Attacked and their total power does not factor into 
+the power of the defending territory. If the territory an Arial unit is based in is no longer under OWNERSHIP 
+by the player that purchased it, it is destroyed. Water and Arial units cannot be transported.
+
+Transport Units : Transport Units are not full units, merely vessels to help move units quickly. They cannot 
+Attack, and automatically die if the territory they are in is or becomes UNOWNED. Transport Units cannot carry
+an amount of units such that their power level exceeds the transports capacity. Units may board or unboard a 
+transport in their territory (or on a neighboring coast) at no cost.
 
 UNITS:
 
@@ -58,39 +64,39 @@ UNITS:
         Claim Speed : 5
         Only Big Boats may carry Tanks
 
-    HORSE: Transporter
+    HORSE: Transport
         COST: 20/0/0/0 
         Attack : None
         Speed : 2
-        Transport : 2
+        Capacity : 2
         Claim Speed : 3
 
-    BUS: Transporter
+    BUS: Transport
         COST: 0/15/30/20
         Attack : None
         Speed : 3
-        Transport : 20
+        Capacity : 20
         Claim Speed : 3
 
     BOAT: Water Transport
         COST: 15/30/0/0
         Attack : None
         Speed : 3 (Pathed Water Only or Coast Line)
-        Transport : 5
+        Capacity : 5
         Claim Speed : N/A
 
     INTERMEDIATE BOAT: Water Transport
         COST: 10/150/0/85
         Attack : None
         Speed : 3
-        Transport : 15
+        Capacity : 15
         Claim Speed : N/A
 
     BIG BOAT: Water Transport
         COST: 0/150/150/200
         Attack : Any and all Units being transported may Attack from this Transport
         Speed : 3 (Can Travel to any Coast using 1 Speed)
-        Transport : 30 (Can carry tanks)
+        Capacity : 30 (Can carry tanks)
         Claim Speed : N/A
 
     BARRIER: Defense
