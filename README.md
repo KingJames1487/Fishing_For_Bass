@@ -12,16 +12,24 @@ Each territory gives either 5, 3, 1, or 0 of a RESOURCE, with exception to Madag
 
 RESOURCES:  FOOD,  WOOD,  STEEL,  OIL
 
-CLAIM: Claiming territories requires 5 consecutive turns of OWNERSHIP to begin receiving resources. A Claimed territory will produce the specified resources for the player. A territory is UNCLAIMED if you no longer own units there.
+CLAIM: Claiming territories requires 5 consecutive turns of OWNERSHIP to begin receiving resources. 
+A Claimed territory will produce the specified resources for the player. A territory is UNCLAIMED if you no 
+longer own units there.
 
 OWNERSHIP : Ownership is defined as being the only player with a unit on any territory.
 
 TURN :
-    START PHASE : At the Start of your turn, you first gain one point of OWNERSHIP towards any territories not yet CLAIMED. Then, recieve any rescources you may acrue from your CLAIMED territories. Enter the BUY PHASE.
+    START PHASE : At the Start of your turn, you first gain one point of OWNERSHIP towards any territories 
+    not yet CLAIMED. Then, recieve any rescources you may acrue from your CLAIMED territories.
     
-    BUY PHASE : Here, you may spend any resources you choose, any Units or Arial Units must be placed on a territory, Water must be placed on a Coastline you own, and BARRIERS must be placed on a Border partially owned by you. Enter ACTION PHASE.
+    BUY PHASE : Here, you may spend any resources you choose, any Units or Arial Units must be placed on a 
+    territory, Water must be placed on a Coastline you own, and BARRIERS must be placed on a Border partially 
+    owned by you.
     
-    ACTION PHASE : Here, you may move or Attack Units. Once per round, you may choose to expend 1 of a Units Speed to Attack. If the Attack leaves the Defending territory without OWNERSHIP, the Attacking units may move into the territory without expending Speed. Speed resets on your turn and if not used to Attack, unless otherwise specified, can be used to move into Allied or UNOWNED territories.
+    ACTION PHASE : Here, you may move or Attack Units. Once per round, you may choose to expend 1 of a 
+    Units Speed to Attack. If the Attack leaves the Defending territory without OWNERSHIP, the Attacking 
+    units may move into the territory without expending Speed. Speed resets on your turn and if not used 
+    to Attack, unless otherwise specified, can be used to move into Allied or UNOWNED territories.
 
 UNITS:
 
@@ -86,7 +94,8 @@ UNITS:
     PLANE: Arial
         COST: 0/0/250/200
         Speed : 1 Territory
-        Attack : I attack a chosen territory, killing up to 5 Units.
+        Power : 5
+        Attack : I attack any chosen territory, when I Attack, I do not die.
         
     NUKES: Arial
         COST:500/500/1000/1500
