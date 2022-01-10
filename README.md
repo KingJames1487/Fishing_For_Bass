@@ -19,6 +19,7 @@ longer own units there.
 OWNERSHIP : Ownership is defined as being the only player with a unit on any territory.
 
 TURN :
+
     START PHASE : At the Start of your turn, you first gain one point of OWNERSHIP towards any territories 
     not yet CLAIMED. Then, recieve any rescources you may acrue from your CLAIMED territories.
     
@@ -35,14 +36,16 @@ UNITS:
 
     WARRIOR: Unit
         COST: 10/0/0/0 - **(10 Food/ 0 Wood/ 0 Steel/ 0 Oil)**
-        Equivalent to 1 Unit
         Speed : 1
+        Power : 1
+        Attack : I Attack a neighboring territory
         Claim Speed : 5
 
     TANK: Unit
         COST: 50/0/150/0
-        Equivalent to 10 Units
         Speed : 1
+        Power : 10
+        Attack : I Attack a neighboring territory
         Claim Speed : 5
         Only Big Boats may carry Tanks
 
