@@ -4,20 +4,19 @@ Rules:
 
 3 - 6  Players
 
-Each Player will start with one Warrior in a spot of their choosing. 
-Order of player choosing is decided by a random and turns go counter clockwise from there.
+Each Player will start with one Warrior in a spot of their choosing.
 
-On Turn 1, each placed warrior will automatically CLAIM that terrritory
-Each territory gives either 5, 3, 1, or 0 of a RESOURCE
-Madagascar is the only exception to this, which give 5 of eahc RESOURCE
+On Turn 1, each placed warrior will automatically CLAIM that terrritory.
+
+Each player goes once in a round
+
+Each territory gives either 5, 3, 1, or 0 of a RESOURCE, with exception to Madagascar which gives 5 of each.
 
 RESOURCES:  FOOD,  WOOD,  STEEL,  OIL
-Each Resource has it's own value and is more/less valuable at different points in the game. This allows for late/early game builds
-    This is essentially the currency of the game
-    ex. Food is amazing early while oil is next to useles but oil becomes extremely good later
 
-CLAIM: To begin claiming a territory, simply move a character into an uninhabited space.
-    ***Claiming territories takes more than 0 turns unlike Civ or Risk. In Fishing For Bass, it takes *5* consecutive turns of ownership to begin receiving resources/ Ownership is defined as being the only player with a unit on any territory***
+CLAIM: Claiming territories requires 5 consecutive turns of OWNERSHIP to begin receiving resources. A Claimed territory will produce the specified resources for the player.
+
+OWNERSHIP : Ownership is defined as being the only player with a unit on any territory.
 
 UNITS:
 
@@ -61,24 +60,28 @@ UNITS:
         Transport : 15
         Claim Speed : 3
 
-    BIG BOAT: Advanced Water Transport
+    BIG BOAT: Water Transport
         COST: 0/150/150/200
         Speed : 3 (Can Travel to any Coast using 1 Speed)
         Transport : 30 (Can carry tanks)
         Claim Speed : 3
         MAY ATTACK WITH TRANSPORTED UNITS
 
-    BARRIER: Defense Mechanism
+    BARRIER: Defense
         COST: 0/25/50/0
         Placed on any border, if attacked from that border, kill
         attacking Units, then Destroy me at the end of the turn
         
+    ANTI-AIRCRAFT : Defense
+        COST : 10/0/100/50
+        Place on any territory, if attacked by a PLANE, the PLANE dies, you do not lose units.
+        
     PLANE: Arial
-        COST: 0/0/300/150
+        COST: 0/0/250/200
         Attack : I attack a chosen territory, killing up to 5 Units. This can be done once per round
         
     NUKES: Arial
-        COST:1000/1000/1000/1000 + 1000 OIL per territory moved (Max : 3)
+        COST:500/500/1000/1000 + 1000 OIL per territory moved (Max : 3)
         Must be fired from a freindly territory
         Destoys and unclaims all units in chosen destination as well as any surrounding territories
         Territory chosen cannot give resources for 10 rounds
