@@ -111,4 +111,5 @@ UNITS:
         
     NUKES: Arial
         COST:500/500/1000/1500
-        Attack : Destroys all units in chosen destination as well as any bordering territories. The territory attacked cannot be CLAIMED for 10 rounds.
+        Attack : Destroys all units in chosen destination as well as any bordering territories. 
+        The territory attacked cannot be CLAIMED for 10 rounds.
