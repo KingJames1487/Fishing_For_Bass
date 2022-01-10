@@ -17,6 +17,7 @@ A Claimed territory will produce the specified resources for the player. A terri
 longer own units there.
 
 OWNERSHIP : Ownership is defined as being the only player with a unit on any territory.
+
 UNOWNED : Any territory with no units.
 
 TURN :
