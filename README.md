@@ -30,7 +30,7 @@ TURN :
     owned by you.
     
     ACTION PHASE : Here, you may move or Attack Units. Once per round, you may choose to expend 1 of a 
-    Units Speed to Attack. If the Attack leaves the Defending territory without UNOWNED, the Attacking 
+    Units Speed to Attack. If the Attack leaves the Defending territory UNOWNED, the Attacking 
     unit(s) may move into the territory without expending Speed. Speed resets on your turn and if not used 
     to Attack, unless otherwise specified, can be used to move into adjacent allied or UNOWNED territories.
 
