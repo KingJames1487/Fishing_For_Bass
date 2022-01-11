@@ -13,8 +13,8 @@ Each territory gives either 5, 3, 1, or 0 of a RESOURCE, with exception to Madag
 RESOURCES:  FOOD,  WOOD,  STEEL,  OIL
 
 CLAIM: Claiming territories requires 5 consecutive turns of OWNERSHIP to begin receiving resources. 
-A Claimed territory will produce the specified resources for the player. A territory is UNCLAIMED if you no 
-longer have 0 power there.
+A Claimed territory will produce the specified resources for the player. A territory is UNCLAIMED if you
+have 0 power there.
 
 OWNERSHIP : Ownership is defined as being the only player with a unit on any territory. A territory 
 is UNOWNED is you have 0 power there.
